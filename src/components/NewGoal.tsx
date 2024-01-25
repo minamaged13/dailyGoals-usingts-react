@@ -16,11 +16,11 @@ export default function NewGoal({onAddGoal}:newGoalProps) {
     <form onSubmit={handleSubmit}>
       <p>
         <label htmlFor="goal">Your goal</label>
-        <input id="goal" type="text" name="goal" ref={goal} />
+        <input required id="goal" type="text" name="goal" ref={goal} />
       </p>
       <p>
         <label htmlFor="summary">short summary</label>
-        <input id="summary" type="text" name="summary" ref={summary} />
+        <input required id="summary" type="text" name="summary" ref={summary} />
       </p>
       <p>
         <button> Add Goal</button>
