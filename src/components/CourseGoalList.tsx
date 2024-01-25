@@ -11,12 +11,14 @@ export default function CourseGoalList({
   onDeleteGoal,
 }: courseGoalListprop) {
   if (goals.length === 0) {
-    return <InfoBox mode="hint">you have no course goals yet</InfoBox>;
+    return <InfoBox mode="hint">You have no course goals yet</InfoBox>;
   }
   let warningBox: ReactNode;
   if (goals.length >= 4) {
     warningBox = (
-      <InfoBox mode="warning" severity='medium'>you are collecting alot of goals</InfoBox>
+      <InfoBox mode="warning" severity="medium">
+        You are collecting alot of goals, take care
+      </InfoBox>
     );
   }
   return (

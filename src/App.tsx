@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import goalsImg from "./assets/react.svg";
+import goalsImg from "./assets/goals.jpg";
 import { useState } from "react";
 import CourseGoalList from "./components/CourseGoalList";
 import NewGoal from "./components/NewGoal";
@@ -28,7 +28,7 @@ function App() {
     <>
       <main>
         <Header image={{ src: goalsImg, alt: "a list of goals" }}>
-          <h1> your daily goals</h1>
+          <h1> Your Daily Goals</h1>
         </Header>
        <NewGoal onAddGoal={handleAddGoal}/>
         <CourseGoalList onDeleteGoal={handleDeleteGoal} goals={goals} />
